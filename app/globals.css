@@ -20,22 +20,6 @@
 .animation-delay-1000 {
   animation-delay: 1s;
 }
-
-/* Force proper scaling on all devices */
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* Ensure all elements scale properly */
 * {
   box-sizing: border-box;
 }
@@ -50,4 +34,5 @@ body {
 /* Ensure images don't overflow */
 img {
   max-width: 100%;
-  height: auto;}
+  height: auto;
+}
