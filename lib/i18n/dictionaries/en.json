@@ -1,0 +1,120 @@
+
+{
+  "common": {
+    "appName": "RealEstate Tunisia",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "allInOne": "Tunisia",
+    "edit": "Edit",
+    "search": "Search"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "createAccount": "Create Account",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "welcomeBack": "Welcome back!",
+    "joinUs": "Join us today!",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "passwordsMustMatch": "Passwords must match",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "usernameRequired": "Username is required",
+    "usernameMinLength": "Username must be at least 3 characters"
+  },
+  "home": {
+    "title": "Find Your Dream Property in Tunisia",
+    "subtitle": "Browse thousands of properties for sale and rent",
+    "searchPlaceholder": "Search by city or neighborhood...",
+    "searchButton": "Search",
+    "browseCategories": "Browse by Category",
+    "viewAll": "View all",
+    "properties": "properties",
+    "recentProperties": "Recent Properties",
+    "welcomeMessage": "Welcome back, {{name}}!",
+    "getStarted": "Get Started",
+    "loginToPost": "Please login to start posting properties",
+    "postProperty": "Post Property","nearYou": "Properties near",
+    "selectLocation": "Select your location to see nearby properties",
+    "sellers": "Sellers",
+    "support": "Support",
+    "newListing": "New listing",
+    "justAdded": "Just added",
+    "findWhatYouNeed": "Find exactly what you're looking for",
+    "readyToPost": "Ready to list something new?",
+    "readyToFind": "Ready to find what you're looking for?",
+    "joinOthers": "Join thousands of Tunisians buying and selling every day",
+    "buyersAlt": "Happy buyers",
+    "free": "100% Free",
+    "whyChooseUs": "Why choose us",
+    "missionTitle": "The largest real estate platform in Tunisia",
+    "missionDescription": "From homes to cars, from lands to businesses. We bring all opportunities together in one place. Free for everyone.",
+    "heroImageAlt": "Hand holding a house"
+  },
+  "categories": {
+    "houses": "Houses",
+    "apartments": "Apartments",
+    "condos": "Condos",
+    "land": "Land",
+    "commercial": "Commercial"
+  },
+  "profile": {
+    "myProfile": "My Profile",
+    "myProperties": "My Properties",
+    "savedItems": "Saved Items",
+    "settings": "Settings"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "invalidCredentials": "Invalid email or password",
+    "emailExists": "Email already exists",
+    "usernameExists": "Username already exists",
+    "required": "This field is required"
+  },
+  
+  "trust": {
+    "since": "Since 2024",
+    "title": "The best place for",
+    "deals": "trusted deals",
+    "description": "We bring buyers and sellers together in the most transparent way. No hassle, no stress — just smooth transactions.",
+    "secure": "Secure transactions",
+    "secureDesc": "All deals are protected and verified",
+    "direct": "Direct contact",
+    "directDesc": "Connect directly with buyers and sellers",
+    "easy": "Easy process",
+    "easyDesc": "List in minutes, find in seconds",
+    "start": "Start dealing",
+    "imageAlt": "Handshake deal",
+    "trusted": "10k+ deals",
+    "success": "Success rate"
+  },
+  
+  "location": {
+    "selectLocation": "Select location",
+    "chooseLocation": "Choose your location",
+    "selectGovernorate": "Select governorate",
+    "selectDelegation": "Select delegation",
+    "useMyLocation": "Use my current location",
+    "apply": "Apply",
+    "inYourArea": "In your area",
+    "searchPlaceholder": "Search for a city, delegation...",
+    "governorate": "Governorate",
+    "delegation": "Delegation",
+    "locality": "Area",
+    "selected": "Selected"
+    
+  }
+
+}

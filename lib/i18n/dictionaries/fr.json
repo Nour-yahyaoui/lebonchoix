@@ -1,0 +1,120 @@
+
+{
+  "common": {
+    "appName": "Immobilier Tunisie",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "allInOne": "Tunisie",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "username": "Nom d'utilisateur",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "createAccount": "Créer un compte",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "welcomeBack": "Bon retour !",
+    "joinUs": "Rejoignez-nous !",
+    "passwordRequired": "Le mot de passe est requis",
+    "passwordMinLength": "Le mot de passe doit contenir au moins 6 caractères",
+    "passwordsMustMatch": "Les mots de passe doivent correspondre",
+    "emailRequired": "L'email est requis",
+    "emailInvalid": "Veuillez entrer un email valide",
+    "usernameRequired": "Le nom d'utilisateur est requis",
+    "usernameMinLength": "Le nom d'utilisateur doit contenir au moins 3 caractères"
+  },
+  "home": {
+    "title": "Trouvez la propriété de vos rêves en Tunisie",
+    "subtitle": "Parcourez des milliers de propriétés à vendre et à louer",
+    "searchPlaceholder": "Rechercher par ville ou quartier...",
+    "searchButton": "Rechercher",
+    "browseCategories": "Parcourir par catégorie",
+    "viewAll": "Voir tout",
+    "properties": "propriétés",
+    "recentProperties": "Propriétés récentes",
+    "welcomeMessage": "Bon retour, {{name}} !",
+    "getStarted": "Commencer",
+    "loginToPost": "Veuillez vous connecter pour publier des annonces",
+    "postProperty": "Publier une annonce",
+     "nearYou": "Propriétés près de",
+    "selectLocation": "Sélectionnez votre emplacement pour voir les propriétés à proximité",
+    "sellers": "Vendeurs",
+    "support": "Support",
+    "newListing": "Nouvelle annonce",
+    "justAdded": "Nouveau",
+    "findWhatYouNeed": "Trouvez exactement ce que vous cherchez",
+    "readyToPost": "Prêt à publier une annonce ?",
+    "readyToFind": "Prêt à trouver ce que vous cherchez ?",
+    "joinOthers": "Rejoignez des milliers de Tunisiens qui achètent et vendent chaque jour",
+    "buyersAlt": "Acheteurs heureux",
+    "free": "100% Gratuit",
+    "whyChooseUs": "Pourquoi nous choisir",
+    "missionTitle": "La plus grande plateforme immobilière de Tunisie",
+    "missionDescription": "Des maisons aux voitures, des terrains aux commerces. Nous rassemblons toutes les opportunités au même endroit. Gratuit pour tous.",
+    "heroImageAlt": "Main tenant une maison"
+  },
+  "categories": {
+    "houses": "Maisons",
+    "apartments": "Appartements",
+    "condos": "Condos",
+    "land": "Terrains",
+    "commercial": "Commercial"
+  },
+  "profile": {
+    "myProfile": "Mon Profil",
+    "myProperties": "Mes Propriétés",
+    "savedItems": "Favoris",
+    "settings": "Paramètres"
+  },
+  "errors": {
+    "somethingWentWrong": "Une erreur est survenue",
+    "invalidCredentials": "Email ou mot de passe incorrect",
+    "emailExists": "Cet email existe déjà",
+    "usernameExists": "Ce nom d'utilisateur existe déjà",
+    "required": "Ce champ est requis"
+  
+},
+  "trust": {
+    "since": "Depuis 2024",
+    "title": "Le meilleur endroit pour",
+    "deals": "des transactions fiables",
+    "description": "Nous réunissons acheteurs et vendeurs de la manière la plus transparente. Sans tracas, sans stress — des transactions fluides.",
+    "secure": "Transactions sécurisées",
+    "secureDesc": "Toutes les transactions sont protégées et vérifiées",
+    "direct": "Contact direct",
+    "directDesc": "Connectez-vous directement avec les acheteurs et vendeurs",
+    "easy": "Processus simple",
+    "easyDesc": "Publiez en minutes, trouvez en secondes",
+    "start": "Commencer",
+    "imageAlt": "Poignée de main",
+    "trusted": "10k+ transactions",
+    "success": "Taux de réussite"
+  },
+  
+  "location": {
+    "selectLocation": "Choisir un lieu",
+    "chooseLocation": "Choisissez votre emplacement",
+    "selectGovernorate": "Sélectionnez le gouvernorat",
+    "selectDelegation": "Sélectionnez la délégation",
+    "useMyLocation": "Utiliser ma position",
+    "apply": "Appliquer",
+    "searchPlaceholder": "Search for a city, delegation...",
+    "governorate": "Governorate",
+    "delegation": "Delegation",
+    "locality": "Area",
+    "selected": "Selected",
+    "inYourArea": "In your area"
+  
+}
+}

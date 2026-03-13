@@ -1,0 +1,106 @@
+
+{
+  "common": {
+    "appName": "عقارات تونس",
+    "loading": "جاري التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "username": "اسم المستخدم",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "hasAccount": "لديك حساب بالفعل؟",
+    "createAccount": "إنشاء حساب",
+    "signIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "welcomeBack": "مرحباً بعودتك!",
+    "joinUs": "انضم إلينا اليوم!",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "passwordMinLength": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+    "passwordsMustMatch": "كلمات المرور غير متطابقة",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "الرجاء إدخال بريد إلكتروني صحيح",
+    "usernameRequired": "اسم المستخدم مطلوب",
+    "usernameMinLength": "اسم المستخدم يجب أن يكون 3 أحرف على الأقل"
+  },
+  "home": {
+    "title": "ابحث عن عقار أحلامك في تونس",
+    "subtitle": "تصفح آلاف العقارات للبيع والإيجار",
+    "searchPlaceholder": "ابحث بالمدينة أو الحي...",
+    "searchButton": "بحث",
+    "browseCategories": "تصفح حسب الفئة",
+    "viewAll": "عرض الكل",
+    "properties": "عقار",
+    "recentProperties": "أحدث العقارات",
+    "welcomeMessage": "مرحباً بعودتك، {{name}}!",
+    "getStarted": "ابدأ الآن",
+    "loginToPost": "الرجاء تسجيل الدخول لنشر العقارات",
+    "postProperty": "نشر عقار"
+  },
+  "categories": {
+    "houses": "منازل",
+    "apartments": "شقق",
+    "condos": "شقق فاخرة",
+    "land": "أراضي",
+    "commercial": "تجاري"
+  },
+  "profile": {
+    "myProfile": "ملفي الشخصي",
+    "myProperties": "عقاراتي",
+    "savedItems": "المحفوظات",
+    "settings": "الإعدادات"
+  },
+  "errors": {
+    "somethingWentWrong": "حدث خطأ ما",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "emailExists": "البريد الإلكتروني موجود بالفعل",
+    "usernameExists": "اسم المستخدم موجود بالفعل",
+    "required": "هذا الحقل مطلوب"
+  },
+  
+  "trust": {
+    "since": "منذ 2024",
+    "title": "أفضل مكان لـ",
+    "deals": "صفقات موثوقة",
+    "description": "نجمع المشترين والبائعين بأكثر الطرق شفافية. لا عناء، لا ضغط — مجرد معاملات سلسة.",
+    "secure": "معاملات آمنة",
+    "secureDesc": "جميع الصفقات محمية وموثقة",
+    "direct": "تواصل مباشر",
+    "directDesc": "تواصل مباشر مع المشترين والبائعين",
+    "easy": "عملية سهلة",
+    "easyDesc": "انشر في دقائق، ابحث في ثوان",
+    "start": "ابدأ الآن",
+    "imageAlt": "مصافحة",
+    "trusted": "+10 آلاف صفقة",
+    "success": "نسبة النجاح"
+  
+},
+
+  "location": {
+    "selectLocation": "اختر الموقع",
+    "chooseLocation": "اختر موقعك",
+    "selectGovernorate": "اختر الولاية",
+    "selectDelegation": "اختر المعتمدية",
+    "useMyLocation": "استخدم موقعي الحالي",
+    "apply": "تطبيق",
+    "inYourArea": "في منطقتك",
+    "searchPlaceholder": "Search for a city, delegation...",
+    "governorate": "Governorate",
+    "delegation": "Delegation",
+    "locality": "Area",
+    "selected": "Selected"
+  
+  }
+
+
+}
