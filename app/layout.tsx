@@ -1,5 +1,5 @@
 // app/layout.tsx
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { LanguageProvider } from '@/contexts/language-context';
@@ -7,17 +7,24 @@ import { LanguageProvider } from '@/contexts/language-context';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'RealEstate Tunisia',
-  description: 'Find your dream property in Tunisia',
-    icons: {
+  title: 'Deals Tunisie',
+  description: 'Trouvez les meilleures deals en Tunisie - Maisons, voitures, terrains et plus',
+  icons: {
     icon: [
-      { url: '/favicon.png', sizes: '16x16', type: 'image/png' },
-    
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
     ],
-   
+    apple: [
+      { url: '/favicon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export default function RootLayout({
   children,
@@ -27,12 +34,16 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        <meta charSet="utf-8" />
         <meta 
           name="viewport" 
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" 
         />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
