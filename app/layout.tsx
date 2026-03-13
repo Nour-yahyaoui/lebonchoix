@@ -9,7 +9,15 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'RealEstate Tunisia',
   description: 'Find your dream property in Tunisia',
+    icons: {
+    icon: [
+      { url: '/favicon.png', sizes: '16x16', type: 'image/png' },
+    
+    ],
+   
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -18,8 +26,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <meta 
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
+        />
+      </head>
       <body className={inter.className}>
-        <LanguageProvider> {/* This should wrap everything */}
+        <LanguageProvider>
           {children}
         </LanguageProvider>
       </body>

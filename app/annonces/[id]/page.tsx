@@ -77,15 +77,15 @@ export default function AnnonceDetailPage() {
   // Get icon for category (fallback)
   const getCategoryIcon = (slug: string) => {
     switch(slug) {
-      case 'houses': return <Home className="h-6 w-6" />;
-      case 'apartments': return <Building className="h-6 w-6" />;
-      case 'land': return <TreePine className="h-6 w-6" />;
-      case 'commercial': return <Store className="h-6 w-6" />;
-      case 'cars': return <Car className="h-6 w-6" />;
-      case 'offices': return <Briefcase className="h-6 w-6" />;
-      case 'warehouses': return <Warehouse className="h-6 w-6" />;
-      case 'companies': return <Landmark className="h-6 w-6" />;
-      default: return <Home className="h-6 w-6" />;
+      case 'houses': return <Home className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'apartments': return <Building className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'land': return <TreePine className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'commercial': return <Store className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'cars': return <Car className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'offices': return <Briefcase className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'warehouses': return <Warehouse className="h-5 w-5 sm:h-6 sm:w-6" />;
+      case 'companies': return <Landmark className="h-5 w-5 sm:h-6 sm:w-6" />;
+      default: return <Home className="h-5 w-5 sm:h-6 sm:w-6" />;
     }
   };
 
@@ -107,16 +107,16 @@ export default function AnnonceDetailPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-6 lg:py-8">
           <div className="animate-pulse">
-            <div className="h-10 bg-gray-200 rounded w-1/4 mb-8"></div>
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-              <div className="h-[500px] bg-gray-200 rounded-2xl"></div>
-              <div className="space-y-6">
-                <div className="h-10 bg-gray-200 rounded w-3/4"></div>
-                <div className="h-8 bg-gray-200 rounded w-1/2"></div>
-                <div className="h-24 bg-gray-200 rounded"></div>
-                <div className="h-24 bg-gray-200 rounded"></div>
+            <div className="h-8 sm:h-10 bg-gray-200 rounded w-1/3 sm:w-1/4 mb-6 sm:mb-8"></div>
+            <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+              <div className="h-[300px] sm:h-[400px] lg:h-[500px] bg-gray-200 rounded-xl lg:rounded-2xl"></div>
+              <div className="space-y-4 sm:space-y-5 lg:space-y-6">
+                <div className="h-8 sm:h-10 bg-gray-200 rounded w-3/4"></div>
+                <div className="h-6 sm:h-8 bg-gray-200 rounded w-1/2"></div>
+                <div className="h-20 sm:h-24 bg-gray-200 rounded"></div>
+                <div className="h-20 sm:h-24 bg-gray-200 rounded"></div>
               </div>
             </div>
           </div>
@@ -127,16 +127,16 @@ export default function AnnonceDetailPage() {
 
   if (!annonce) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
         <div className="text-center">
-          <div className="text-7xl mb-6">😕</div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">Annonce non trouvée</h1>
-          <p className="text-gray-500 text-lg mb-8">Cette annonce n'existe pas ou a été supprimée</p>
+          <div className="text-5xl sm:text-6xl lg:text-7xl mb-4 sm:mb-6">😕</div>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-3">Annonce non trouvée</h1>
+          <p className="text-base sm:text-lg text-gray-500 mb-6 sm:mb-8">Cette annonce n'existe pas ou a été supprimée</p>
           <Link
             href="/annonces"
-            className="inline-flex items-center px-8 py-4 bg-gray-900 text-white text-lg rounded-xl hover:bg-gray-800 transition"
+            className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white text-base sm:text-lg rounded-lg sm:rounded-xl hover:bg-gray-800 transition"
           >
-            <ArrowLeft className="h-5 w-5 mr-3" />
+            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 mr-2 sm:mr-3" />
             Retour aux annonces
           </Link>
         </div>
@@ -148,29 +148,29 @@ export default function AnnonceDetailPage() {
   const images = annonce.images && annonce.images.length > 0 ? annonce.images : [];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 overflow-x-hidden">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            <div className="flex items-center gap-4">
+        <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+          <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
+            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 min-w-0">
               <Link 
                 href="/annonces" 
-                className="p-2 hover:bg-gray-100 rounded-xl transition"
+                className="p-1.5 sm:p-2 hover:bg-gray-100 rounded-lg lg:rounded-xl transition flex-shrink-0"
               >
-                <ArrowLeft className="h-6 w-6 text-gray-600" />
+                <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-gray-600" />
               </Link>
-              <h1 className="text-2xl font-medium text-gray-900 truncate max-w-2xl">
+              <h1 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-medium text-gray-900 truncate max-w-[200px] xs:max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] xl:max-w-2xl">
                 {annonce.title}
               </h1>
             </div>
 
-            <div className="flex items-center gap-3">
-              <button className="p-3 hover:bg-gray-100 rounded-xl transition">
-                <Share2 className="h-6 w-6 text-gray-600" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <button className="p-2 sm:p-2.5 lg:p-3 hover:bg-gray-100 rounded-lg lg:rounded-xl transition">
+                <Share2 className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-gray-600" />
               </button>
-              <button className="p-3 hover:bg-gray-100 rounded-xl transition">
-                <Heart className="h-6 w-6 text-gray-600" />
+              <button className="p-2 sm:p-2.5 lg:p-3 hover:bg-gray-100 rounded-lg lg:rounded-xl transition">
+                <Heart className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-gray-600" />
               </button>
             </div>
           </div>
@@ -178,19 +178,18 @@ export default function AnnonceDetailPage() {
       </header>
 
       {/* Main content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
           {/* Left column - Images */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {/* Main image */}
-            <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+            <div className="relative bg-white rounded-xl lg:rounded-2xl overflow-hidden shadow-lg lg:shadow-xl aspect-[4/3]">
               {images.length > 0 ? (
                 <img
                   src={images[selectedImage]}
                   alt={annonce.title}
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    // If image fails to load, show fallback
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.parentElement?.querySelector('.fallback')?.classList.remove('hidden');
                   }}
@@ -201,7 +200,7 @@ export default function AnnonceDetailPage() {
               {images.length === 0 && (
                 <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 fallback">
                   {getCategoryIcon(annonce.category_slug)}
-                  <span className="text-sm mt-2">Image non disponible</span>
+                  <span className="text-xs sm:text-sm mt-1 sm:mt-2">Image non disponible</span>
                 </div>
               )}
 
@@ -210,22 +209,22 @@ export default function AnnonceDetailPage() {
                 <>
                   <button
                     onClick={() => setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/90 rounded-full shadow-lg hover:bg-white transition"
+                    className="absolute left-2 sm:left-3 lg:left-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-2.5 lg:p-3 bg-white/90 rounded-full shadow-lg hover:bg-white transition"
                   >
-                    <ChevronLeft className="h-6 w-6 text-gray-600" />
+                    <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-gray-600" />
                   </button>
                   <button
                     onClick={() => setSelectedImage((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/90 rounded-full shadow-lg hover:bg-white transition"
+                    className="absolute right-2 sm:right-3 lg:right-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-2.5 lg:p-3 bg-white/90 rounded-full shadow-lg hover:bg-white transition"
                   >
-                    <ChevronRight className="h-6 w-6 text-gray-600" />
+                    <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-gray-600" />
                   </button>
                 </>
               )}
 
               {/* Image counter */}
               {images.length > 1 && (
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-4 py-2 rounded-full text-sm">
+                <div className="absolute bottom-2 sm:bottom-3 lg:bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 rounded-full text-xs sm:text-sm">
                   {selectedImage + 1} / {images.length}
                 </div>
               )}
@@ -233,13 +232,13 @@ export default function AnnonceDetailPage() {
 
             {/* Thumbnail grid */}
             {images.length > 1 && (
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 gap-2 sm:gap-3">
                 {images.map((img, idx) => (
                   <button
                     key={idx}
                     onClick={() => setSelectedImage(idx)}
-                    className={`relative aspect-[4/3] rounded-xl overflow-hidden ${
-                      selectedImage === idx ? 'ring-4 ring-blue-600' : ''
+                    className={`relative aspect-[4/3] rounded-lg lg:rounded-xl overflow-hidden ${
+                      selectedImage === idx ? 'ring-2 sm:ring-4 ring-blue-600' : ''
                     }`}
                   >
                     <img
@@ -254,77 +253,77 @@ export default function AnnonceDetailPage() {
           </div>
 
           {/* Right column - Details */}
-          <div className="space-y-8">
-            {/* Category badge */}
-            <div className="flex items-center gap-4">
-              <div className={`flex items-center gap-3 px-5 py-2.5 rounded-full text-base font-medium ${getCategoryColor(annonce.category_slug)}`}>
+          <div className="space-y-5 sm:space-y-6 lg:space-y-8">
+            {/* Category badge and metadata */}
+            <div className="flex flex-col xs:flex-row xs:items-center gap-3 sm:gap-4">
+              <div className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 lg:py-2.5 rounded-full text-xs sm:text-sm lg:text-base font-medium ${getCategoryColor(annonce.category_slug)} w-fit`}>
                 {getCategoryIcon(annonce.category_slug)}
                 <span>{annonce.category_name}</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-500">
-                <span className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                  <span className="text-base">{formatDate(annonce.created_at)}</span>
+              <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm lg:text-base text-gray-500">
+                <span className="flex items-center gap-1 sm:gap-2">
+                  <Calendar className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="hidden xs:inline">{formatDate(annonce.created_at)}</span>
                 </span>
-                <span className="flex items-center gap-2">
-                  <Eye className="h-5 w-5" />
-                  <span className="text-base">{annonce.views || 0} vues</span>
+                <span className="flex items-center gap-1 sm:gap-2">
+                  <Eye className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>{annonce.views || 0} vues</span>
                 </span>
               </div>
             </div>
 
             {/* Title and price */}
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4 leading-tight">
                 {annonce.title}
               </h1>
-              <div className="flex items-baseline gap-3">
-                <span className="text-5xl lg:text-6xl font-bold text-blue-600">
+              <div className="flex items-baseline gap-2 sm:gap-3">
+                <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-600">
                   {formatPrice(annonce.price)}
                 </span>
-                <span className="text-xl text-gray-400">TND</span>
+                <span className="text-base sm:text-lg lg:text-xl text-gray-400">TND</span>
               </div>
             </div>
 
             {/* Location */}
-            <div className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm">
-              <MapPin className="h-6 w-6 text-gray-400 mt-1 flex-shrink-0" />
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-gray-200 shadow-sm">
+              <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-xl text-gray-900 font-medium mb-1">{annonce.address}</p>
-                <p className="text-lg text-gray-500">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-900 font-medium mb-0.5 sm:mb-1">{annonce.address}</p>
+                <p className="text-sm sm:text-base lg:text-lg text-gray-500">
                   {annonce.delegation_name}, {annonce.governorate_name}
                 </p>
               </div>
             </div>
 
             {/* Description */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6">Description</h2>
-              <p className="text-lg text-gray-600 leading-relaxed whitespace-pre-line">
+            <div className="bg-white rounded-xl lg:rounded-2xl border border-gray-200 p-5 sm:p-6 lg:p-8 shadow-sm">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-4 sm:mb-5 lg:mb-6">Description</h2>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed whitespace-pre-line">
                 {annonce.description}
               </p>
             </div>
 
             {/* Contact section */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6">Contact</h2>
+            <div className="bg-white rounded-xl lg:rounded-2xl border border-gray-200 p-5 sm:p-6 lg:p-8 shadow-sm">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-4 sm:mb-5 lg:mb-6">Contact</h2>
               
               {!showContact ? (
                 <button
                   onClick={() => setShowContact(true)}
-                  className="w-full py-5 bg-gray-900 text-white text-lg font-medium rounded-xl hover:bg-gray-800 transition shadow-lg"
+                  className="w-full py-3 sm:py-4 lg:py-5 bg-gray-900 text-white text-sm sm:text-base lg:text-lg font-medium rounded-lg lg:rounded-xl hover:bg-gray-800 transition shadow-md lg:shadow-lg"
                 >
                   Afficher les coordonnées
                 </button>
               ) : (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-xl">
-                    <User className="h-6 w-6 text-gray-400" />
-                    <span className="text-lg text-gray-900">{annonce.user_name || 'Vendeur'}</span>
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-gray-50 rounded-lg lg:rounded-xl">
+                    <User className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400" />
+                    <span className="text-sm sm:text-base lg:text-lg text-gray-900">{annonce.user_name || 'Vendeur'}</span>
                   </div>
-                  <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-xl">
-                    <Mail className="h-6 w-6 text-gray-400" />
-                    <a href={`mailto:${annonce.user_email}`} className="text-lg text-blue-600 hover:underline">
+                  <div className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-gray-50 rounded-lg lg:rounded-xl">
+                    <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400" />
+                    <a href={`mailto:${annonce.user_email}`} className="text-sm sm:text-base lg:text-lg text-blue-600 hover:underline break-all">
                       {annonce.user_email || 'contact@example.com'}
                     </a>
                   </div>
@@ -333,20 +332,20 @@ export default function AnnonceDetailPage() {
             </div>
 
             {/* Safety tips */}
-            <div className="bg-blue-50 rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-blue-900 mb-4">Conseils de sécurité</h3>
-              <ul className="space-y-3 text-blue-800">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span className="text-base">Rencontrez le vendeur dans un lieu public</span>
+            <div className="bg-blue-50 rounded-xl lg:rounded-2xl p-5 sm:p-6 lg:p-8">
+              <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-blue-900 mb-3 sm:mb-4">Conseils de sécurité</h3>
+              <ul className="space-y-2 sm:space-y-3 text-blue-800">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm lg:text-base">Rencontrez le vendeur dans un lieu public</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span className="text-base">Vérifiez le bien avant tout paiement</span>
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm lg:text-base">Vérifiez le bien avant tout paiement</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span className="text-base">Ne faites pas de paiement sans voir le bien</span>
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm lg:text-base">Ne faites pas de paiement sans voir le bien</span>
                 </li>
               </ul>
             </div>
